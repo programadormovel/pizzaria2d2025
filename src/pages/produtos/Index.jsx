@@ -1,12 +1,14 @@
+import axios from 'axios'
+
+
 const Produtos = () => {
+
     // Objeto com a lista de pizzas
-    const pizzas = [
-        'Pizza de Muçarela',
-        'Pizza de Calabresa',
-        'Pizza Baiana',
-        'Pizza Portuguesa',
+    axios.get("http://viacep.com.br/ws/01010000/json")
+    .then(response=>{
+        console.log(response.data)
+    })
     
-    ]
     // Iteração da lista de pizzas 
     const listapizzas = pizzas.map(pizza=><li>{pizza}</li>)
     return (
