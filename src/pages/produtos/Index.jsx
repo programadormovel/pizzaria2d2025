@@ -10,7 +10,7 @@ const Produtos = () => {
         // GET - busca os dados da rota ou endpoint
         // then - método assíncrono, espera o retorno da requisição
         // catch - tratamento de erros da requisição
-        axios.get("http://172.19.0.49/pizzariaoficial/api/v1/produto")
+        axios.get("http://172.19.0.49/pizzariateste/api/v1/produto")
         .then(response=>{
             console.log(response.data.data)
             setPizzas(response.data.data)
